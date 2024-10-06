@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(236, 236, 242);
+}
+nav {
+  background-color:rgba(2, 2, 106, 0.9);
+  padding: 30px;/* space inside the navigation bar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+nav a {
+  color: white;
+  margin-right: 40px;/* adds space between links */
+  text-decoration:none;/* removes the underline from the links */
+  font-size: 20px;
+  transition: color 0.3s ease;/* smooth color change on hover */
+  padding: 10px 0;/* add space between the links and the effect */
+  position: relative;/* allow the effect to be placed directly under the link */
+}
+nav a::after {
+  content: '';/* create the underline effect */
+  display: block;/* make the underline visible */
+  width: 0;/* start with no width */
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;/* smooth underline transition */
+  position: absolute;
+  bottom: 0; /* make the underline at the bottom of the link */
+  left: 0;
+}
+nav a:hover::after {
+  width: 100%;/* when the link is hovered, the underline expands to 100% width */
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background: rgb(244, 242, 242);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;/* smooth transition for transform and shadow effects on hover */
+}
+
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+}
+ul li{
+  margin: 20px;
+  padding: 20px;
+  background: rgba(201, 213, 240, 0.507);
+  box-shadow: 0 0 10px rgba(2, 2, 117, 0.625);
+  list-style: none;/* remove bullet points */
+  font-size: large;
+}
+.image-container{
+  display: flex;
+  justify-content: center;/* center the images */
+  gap: 25px;/* space between the images */
+}
+.image-container img{
+  width:250px;
+  height:250px;
+}
+input{
+  height: 30px;
+}
+button{
+  background-color: navy;
+  color: whitesmoke;
+  width: 100px;
+  height:30px;
+  cursor: pointer; /* changes the cursor to a pointer (hand icon) when hovering over the button */
+}
+
+/*elements that have same style*/
+body, input, button{
+  font-family: "Sofia", sans-serif;
+}
+#about, nav, ul li{
+  text-align: center;/* center the element */
+}
+.image-container img,ul li, section,nav{
+  border-radius: 8px;/* round the corners */
+}
+input,button{
+  border-radius: 6px;
+}
+h1, h2 {
+  color: black;
+  text-shadow: 2px 2px 4px navy,2px 2px 3px #F0F8FF,2px 0 4px white;
+  border-bottom: 2px solid rgba(0, 0, 128, 0.19); /* border under the headings */
+  padding-bottom: 10px; /* space below the text before the border */
+  text-transform: capitalize;/* capitalize the first letter of each word */
+}
+section:hover,ul li:hover {
+   transform: translateY(-10px);/* move up slightly when hovered */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
