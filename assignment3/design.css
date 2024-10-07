@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px black;
+  text-align: center;
+}
+main {
+  position: relative;
+  margin: 100px;
+}
+nav{
+  position: sticky;
+  background-color:rgba(176, 174, 174, 0.9);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px black;
+  z-index: 5;
+}
+article {
+  position: absolute;
+  width: 60%;
+  margin: 20px;
+  Background-color: #E0E0E0;
+  padding: 15px;
+  box-shadow: 0 2px 4px black;
+  border-radius: 4px;
+  z-index: 5; 
+}
+aside {
+  position: absolute;
+  width: 30%;
+  margin: 20px;
+  background-color: #D0D0D0;
+  padding: 15px;
+  box-shadow: 0 2px 4px black;
+  border-radius: 4px;
+  right: 0;
+  z-index: 5; 
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #C0C0C0;
+  padding: 10px;
+  text-align: center;
+}
